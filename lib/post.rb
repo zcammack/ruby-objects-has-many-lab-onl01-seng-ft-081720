@@ -12,4 +12,12 @@ class Post
   def save
     @@all << self
   end
+
+  def author=(author)
+    @author = author
+  end
+
+  def self.all
+    @@all
+  end
 end
